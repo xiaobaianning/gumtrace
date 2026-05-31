@@ -341,6 +341,9 @@ void GumTrace::callout_callback(GumCpuContext *cpu_context, gpointer user_data) 
 void GumTrace::transform_callback(GumStalkerIterator *iterator, GumStalkerOutput *output, gpointer user_data) {
     const auto self = get_instance();
     static int transform_count = 0;
+    if (transform_count == 0) {
+        LOGE("transform_callback CALLED %d", transform_count);
+    }
 
     cs_insn *p_insn;
     auto *it = iterator;
