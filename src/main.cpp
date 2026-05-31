@@ -27,8 +27,6 @@ gboolean module_dependency_cb (const GumDependencyDetails * details, gpointer us
     auto gum_module = gum_process_find_module_by_name(details->name);
     if (gum_module != nullptr) {
         gum_module_enumerate_symbols(gum_module, module_symbols_cb, nullptr);
-    } else {
-        LOGE("dependency not found: %s", details->name);
     }
     return true;
 }
@@ -83,13 +81,11 @@ gboolean module_enumerate (GumModule * module, gpointer user_data) {
 #else
 
     auto gum_module_range = gum_module_get_range(module);
-    LOGE("module_enumerate [iOS] %s base=%lx size=%lx", module_name, gum_module_range->base_address, gum_module_range->size);
 
     if (instance->modules.count(module_name) == 0) {
-        LOGE("module_enumerate [iOS] excluding: %s", module_name);
         gum_stalker_exclude(instance->_stalker, gum_module_range);
     } else {
-        LOGE("module_enumerate [iOS] INCLUDING (target): %s", module_name);
+        LOGE("module_enumerate [iOS] INCLUDING (target): %s base=%lx size=%lx", module_name, gum_module_range->base_address, gum_module_range->size);
     }
     return true;
 
