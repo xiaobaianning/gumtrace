@@ -234,14 +234,14 @@ void* thread_function(void* arg) {
 
 extern "C" __attribute__((visibility("default")))
 void run() {
-    NSLog(@"[GumTrace] >>> run() ENTER");
+    LOGE("run() ENTER %d", 1);
     pthread_t thread1;
     pthread_create(&thread1, NULL, thread_function, nullptr);
 
     GumTrace *instance = GumTrace::get_instance();
-    NSLog(@"[GumTrace] >>> run() stalker=%p", instance->_stalker);
+    LOGE("run() stalker=%p", instance->_stalker);
     instance->follow();
-    NSLog(@"[GumTrace] >>> run() follow() done");
+    LOGE("run() follow() done %d", 1);
 }
 
 extern "C" __attribute__((visibility("default")))
