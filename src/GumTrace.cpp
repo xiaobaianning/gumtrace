@@ -417,11 +417,11 @@ const std::map<std::string, std::size_t>& GumTrace::get_module_by_name(const std
 }
 
 void GumTrace::follow() {
-    LOGE("follow: thread_id=%d stalker=%p transformer=%p", trace_thread_id, _stalker, _transformer);
+    NSLog(@"[GumTrace] >>> follow() thread_id=%d stalker=%p transformer=%p", trace_thread_id, _stalker, _transformer);
     trace_thread_id > 0
         ? gum_stalker_follow(_stalker, trace_thread_id, _transformer, nullptr)
         : gum_stalker_follow_me(_stalker, _transformer, nullptr);
-    LOGE("follow: done");
+    NSLog(@"[GumTrace] >>> follow() DONE");
 }
 
 

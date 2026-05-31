@@ -1,0 +1,896 @@
+muyang@muyang:~/Desktop$ idevicesyslog | grep -i "gumtrace\|ERROR\|module_enumerate\|callout\|transform"
+Jun  1 07:02:45 kernel(IO80211Family)[0] <Notice>: LQM-WIFI: slow-wifi RxLim[1] highFCSErrors:0 highDups:0 highReplays:0 highDecryptErrors:0 highMCDecryptErrors:0 lowRxFrameCount:1
+Jun  1 07:02:45 kernel(AppleBCMWLANCore)[0] <Notice>: LQM-WiFi: (5G) txRTSFrm=10 txRTSFail=0 rxCTSUcast=10 rxRTSUcast=3 txCTSFrm=3 txAMPDU=10 rxBACK=10 txPhyError=0 txAllFrm=37 txMPDU=10 txUcast=14 rxACKUcast=4
+Jun  1 07:02:50 kernel(IO80211Family)[0] <Notice>: LQM-WIFI: slow-wifi RxLim[1] highFCSErrors:0 highDups:0 highReplays:0 highDecryptErrors:0 highMCDecryptErrors:0 lowRxFrameCount:1
+Jun  1 07:02:50 kernel(AppleBCMWLANCore)[0] <Notice>: LQM-WiFi: (5G) txRTSFrm=28 txRTSFail=0 rxCTSUcast=28 rxRTSUcast=4 txCTSFrm=4 txAMPDU=28 rxBACK=28 txPhyError=0 txAllFrm=95 txMPDU=29 txUcast=34 rxACKUcast=6
+Jun  1 07:02:52 CommCenter[1000] <Error>: Client [<private>] entitlement failed: 'public-signal-strength', required for request "<private>"
+Jun  1 07:02:52 SpringBoard(SpringBoard)[2955] <Error>: _SBXXFrontmostApplicationDisplayIdentifier Authentication failed: Process lacks credentials to access this resource.
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6299) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:52 Aweme(UserNotifications)[6299] <Notice>: [com.ss.iphone.ugc.Aweme] Set badge number [ hasCompletionHandler: 0 hasError: 0 ]
+Jun  1 07:02:52 backboardd(QuartzCore)[2953] <Error>: ImageQueueCollectable client message err=0x10000003
+Jun  1 07:02:52 kernel[0] <Notice>: necp_process_defunct_list: necp_update_client abort nexus error (2) for pid 6299
+Jun  1 07:02:52 kernel[0] <Notice>: necp_process_defunct_list: necp_update_client abort nexus error (2) for pid 6299
+Jun  1 07:02:52 runningboardd(RunningBoard)[939] <Error>: RBSStateCapture remove item called for untracked item <RBConnectionClient| 6299 name:application<com.ss.iphone.ugc.Aweme> entitlements:<RBEntitlements| [
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6300: No such process
+Jun  1 07:02:52 runningboardd(RunningBoard)[939] <Error>: RBSStateCapture remove item called for untracked item <RBProcessMonitorObserver| qos:0 qos:(null) configs:{
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6301: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6303: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6299: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6303: No such process
+Jun  1 07:02:52 SpringBoard(BaseBoard)[2955] <Error>: Unable to get short BSD proc info for 6299: No such process
+Jun  1 07:02:52 SpringBoard(RunningBoardServices)[2955] <Error>: Error acquiring assertion: <Error Domain=RBSAssertionErrorDomain Code=2 "Specified target process does not exist" UserInfo={NSLocalizedFailureReason=Specified target process does not exist}>
+Jun  1 07:02:52 bluetoothd(MobileWiFi)[996] <Error>: WiFiDeviceClientCopyCurrentNetwork: server port [86323]
+Jun  1 07:02:52 rapportd(MobileWiFi)[995] <Error>: WiFiDeviceClientCopyCurrentNetwork: server port [23555]
+Jun  1 07:02:52 sharingd(MobileWiFi)[975] <Error>: WiFiDeviceClientCopyCurrentNetwork: server port [79107]
+Jun  1 07:02:52 bluetoothd(MobileWiFi)[996] <Error>: WiFiDeviceClientCopyCurrentNetwork: server port [86323]
+Jun  1 07:02:52 rapportd(MobileWiFi)[995] <Error>: WiFiDeviceClientCopyCurrentNetwork: server port [23555]
+Jun  1 07:02:52 sharingd(MobileWiFi)[975] <Error>: WiFiDeviceClientCopyCurrentNetwork: server port [79107]
+Jun  1 07:02:52 CAReportingService(RTCReporting)[1110] <Error>: flushMessagesWithCompletion: flush failed with error '<private>'
+Jun  1 07:02:52 SpringBoard(FrontBoard)[2955] <Error>: Ignoring update for invalidated scene: sceneID:com.ss.iphone.ugc.Aweme-default
+Jun  1 07:02:52 nsurlsessiond(CFNetwork)[1064] <Error>: Task <2CC72E25-9F5A-4FEA-899C-D49C27B5C55D>.<3> finished with error [1] Error Domain=_nsurlsessiondErrorDomain Code=1 UserInfo={NSErrorFailingURLStringKey=<private>, NSErrorFailingURLKey=<private>, _NSURLErrorRelatedURLSessionTaskErrorKey=<private>, _NSURLErrorFailingURLSessionTaskErrorKey=<private>}
+Jun  1 07:02:52 nsurlsessiond(CFNetwork)[1064] <Error>: Task <A1957BE9-D016-4427-8230-E7B9485DA416>.<4> finished with error [1] Error Domain=_nsurlsessiondErrorDomain Code=1 UserInfo={NSErrorFailingURLStringKey=<private>, NSErrorFailingURLKey=<private>, _NSURLErrorRelatedURLSessionTaskErrorKey=<private>, _NSURLErrorFailingURLSessionTaskErrorKey=<private>}
+Jun  1 07:02:52 nsurlsessiond[1064] <Error>: NDSession <C334014D-D511-454F-AF7E-C27178F141A1> Removing client proxy due to task failure caused by app quit
+Jun  1 07:02:52 nsurlsessiond[1064] <Notice>: NDSession <C334014D-D511-454F-AF7E-C27178F141A1> Task <2CC72E25-9F5A-4FEA-899C-D49C27B5C55D>.<3> completed with error Error Domain=_nsurlsessiondErrorDomain Code=1 UserInfo={NSErrorFailingURLStringKey=<private>, NSErrorFailingURLKey=<private>, _NSURLErrorRelatedURLSessionTaskErrorKey=<private>, _NSURLErrorFailingURLSessionTaskErrorKey=<private>} [1]. C(U)
+Jun  1 07:02:52 nsurlsessiond[1064] <Notice>: NDSession <C334014D-D511-454F-AF7E-C27178F141A1> Task <2CC72E25-9F5A-4FEA-899C-D49C27B5C55D>.<3> for client <private> completed with error - code: 1
+Jun  1 07:02:52 nsurlsessiond[1064] <Error>: NDSession <C334014D-D511-454F-AF7E-C27178F141A1> Removing client proxy due to task failure caused by app quit
+Jun  1 07:02:52 nsurlsessiond[1064] <Notice>: NDSession <C334014D-D511-454F-AF7E-C27178F141A1> Task <A1957BE9-D016-4427-8230-E7B9485DA416>.<4> completed with error Error Domain=_nsurlsessiondErrorDomain Code=1 UserInfo={NSErrorFailingURLStringKey=<private>, NSErrorFailingURLKey=<private>, _NSURLErrorRelatedURLSessionTaskErrorKey=<private>, _NSURLErrorFailingURLSessionTaskErrorKey=<private>} [1]. C(U)
+Jun  1 07:02:52 nsurlsessiond[1064] <Notice>: NDSession <C334014D-D511-454F-AF7E-C27178F141A1> Task <A1957BE9-D016-4427-8230-E7B9485DA416>.<4> for client <private> completed with error - code: 1
+Jun  1 07:02:52 nsurlsessiond(CFNetwork)[1064] <Notice>: Task <2CC72E25-9F5A-4FEA-899C-D49C27B5C55D>.<3> can retry(N) with reason(2) for error [1:89]
+Jun  1 07:02:52 nsurlsessiond(CFNetwork)[1064] <Notice>: Task <2CC72E25-9F5A-4FEA-899C-D49C27B5C55D>.<3> HTTP load canceled, 0/0 bytes (error code: -999 [1:89])
+Jun  1 07:02:52 SpringBoard(FrontBoard)[2955] <Error>: Scene FBSceneManager/sceneID:com.ss.iphone.ugc.Aweme-default update failed: <NSError: 0x28145ac10; domain: FBSceneErrorDomain; code: 1 (operation-failed); reason: "Scene update failed."> {
+    NSUnderlyingError = <NSError: 0x28147a880; domain: FBWorkspace; code: 1; reason: "Scene client is invalid.">;
+Jun  1 07:02:52 SpringBoard(FrontBoard)[2955] <Error>: Scene FBSceneManager/sceneID:com.ss.iphone.ugc.Aweme-default update failed: <NSError: 0x28145bf90; domain: FBSceneErrorDomain; code: 1 (operation-failed); reason: "Scene update failed."> {
+    NSUnderlyingError = <NSError: 0x28141d5c0; domain: FBWorkspace; code: 1; reason: "Scene client is invalid.">;
+Jun  1 07:02:52 runningboardd(RunningBoard)[939] <Error>: 6307 setGPURole failed with result = e00002c7
+Jun  1 07:02:52 SpringBoard(FrontBoard)[2955] <Notice>: [FBSystemService][0xf85f] Request complete; no error reported.
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: proc_pidpath failed for 6303 with errno 3
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: proc_pidpath failed for 6303 with errno 3
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6300: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6300: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6303: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6303: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6299: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6299: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6301: No such process
+Jun  1 07:02:52 runningboardd(RunningBoardServices)[939] <Error>: Unable to get short BSD proc info for 6301: No such process
+Jun  1 07:02:52 symptomsd(SymptomEvaluator)[1047] <Error>: COSMCtrl _foregroundAppActivity incoming bundle com.ss.iphone.ugc.Aweme has nil supplied UUID, finds existing 3B2FE494-F7F2-385F-B83A-E389217BD717
+Jun  1 07:02:52 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) file-write-create /Library/Caches/frida-9ZSUP3.dylib
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /private/etc/.mdns_debug
+Jun  1 07:02:53 Aweme(CFNetwork)[6307] <Notice>: Task <5BF5F094-975A-4629-83D6-5DCF3CF76050>.<1> finished with error [-999] Error Domain=NSURLErrorDomain Code=-999 UserInfo={_NSURLErrorRelatedURLSessionTaskErrorKey=<private>, NSLocalizedDescription=<private>, _NSURLErrorFailingURLSessionTaskErrorKey=<private>}
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:53 CommCenter[1000] <Error>: Client [<private>] entitlement failed: 'public-signal-strength', required for request "<private>"
+Jun  1 07:02:53 containermanagerd[980] <Notice>: [0] command=13, client=<<~~~>, u=<501/501/~~/0/1000>, uid=0, pid=1002, sandboxed=1, platform=2 (1/1/1) [(null)]>, error=(none)
+Jun  1 07:02:53 Aweme(CoreFoundation)[6307] <Error>: Couldn't read values in CFPrefsPlistSource<0x2829d6a80> (Domain: group.com.ss.iphone.ugc.Aweme.extension, User: kCFPreferencesAnyUser, ByHost: Yes, Container: (null), Contents Need Refresh: Yes): Using kCFPreferencesAnyUser with a container is only allowed for System Containers, detaching from cfprefsd
+Jun  1 07:02:53 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=1014.278, authValue=2, authReason=2, authVersion=1, error=(null),
+Jun  1 07:02:53 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=1014.279, authValue=2, authReason=2, authVersion=1, error=(null),
+Jun  1 07:02:53 containermanagerd[980] <Notice>: [0] command=38, client=<<~~~>, u=<501/501/~~/0/1000>, uid=501, pid=6307, sandboxed=1, platform=2 (1/1/0) [<~~~>]>, error=(none)
+Jun  1 07:02:53 Aweme(CFNetwork)[6307] <Notice>: Task <2CC72E25-9F5A-4FEA-899C-D49C27B5C55D>.<3> finished with error [-999] Error Domain=NSURLErrorDomain Code=-999 UserInfo={NSURLErrorBackgroundTaskCancelledReasonKey=0, NSErrorFailingURLStringKey=<private>, NSErrorFailingURLKey=<private>, _NSURLErrorRelatedURLSessionTaskErrorKey=<private>, _NSURLErrorFailingURLSessionTaskErrorKey=<private>}
+Jun  1 07:02:53 Aweme(CFNetwork)[6307] <Notice>: Task <A1957BE9-D016-4427-8230-E7B9485DA416>.<4> finished with error [-999] Error Domain=NSURLErrorDomain Code=-999 UserInfo={NSURLErrorBackgroundTaskCancelledReasonKey=0, NSErrorFailingURLStringKey=<private>, NSErrorFailingURLKey=<private>, _NSURLErrorRelatedURLSessionTaskErrorKey=<private>, _NSURLErrorFailingURLSessionTaskErrorKey=<private>}
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /private/etc/ssh/sshd_config
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /private/etc/apt/sources.list.d/sileo.sources
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /usr/bin/ssh
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /bin/bash
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /private/etc/apt/undecimus/undecimus.list
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /private/etc/apt/sources.list.d/electra.list
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /usr/bin/sshd
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /bin/sh
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(2) file-test-existence /private/etc/apt
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) file-write-create /hmd_tmp_file
+Jun  1 07:02:53 mediaserverd(AudioToolbox)[942] <Error>:  AudioSessionServerImp.mm:305   { "action":"set_property", "error":"translating CM session error", "session":{"ID":"0x3aee01","PID":6307,"name":"Aweme"}, "details":{"calling_line":3254,"error_code":-12981,"error_string":"Invalid parameter"} }
+Jun  1 07:02:53 mediaserverd(AudioToolbox)[942] <Error>:  AudioSessionServerImp.mm:305   { "action":"set_property", "error":"translating CM session error", "session":{"ID":"0x3aee01","PID":6307,"name":"Aweme"}, "details":{"calling_line":3308,"error_code":-50,"error_string":"Unknown error code: -50"} }
+Jun  1 07:02:53 mediaserverd(CoreAudio)[942] <Error>:  HALS_AHPPlugIn::ObjectSetPropertyData: got an error from the plug-in routine, Error: 560226676 (<private>)
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) file-test-existence /private/var/Managed Preferences/mobile/com.apple.CoreMotion.plist
+Jun  1 07:02:53 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=6307.1, authValue=2, authReason=2, authVersion=1, error=(null),
+Jun  1 07:02:53 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=1014.280, authValue=2, authReason=2, authVersion=1, error=(null),
+Jun  1 07:02:53 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=1014.281, authValue=2, authReason=2, authVersion=1, error=(null),
+Jun  1 07:02:53 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=6307.2, authValue=1, authReason=0, authVersion=1, error=(null),
+Jun  1 07:02:53 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) file-write-create /netlog_temp
+Jun  1 07:02:53 Aweme(AwemeCore)[6307] <Notice>: [6307:36867:0601/070253.998218:ERROR:tt_net_log_manager.cc(131)] Set root path failed.
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:54 appstored[1095] <Error>: StoreKitServiceConnection(6307): No active account to check messages
+Jun  1 07:02:54 CommCenter[1000] <Error>: Client [<private>] entitlement failed: 'public-signal-strength', required for request "<private>"
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) file-write-create /private/var/mobile/com.apple.mobileInfo
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) file-read-data /Library/LaunchDaemons
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) sysctl-read kern.proc.all.0
+Jun  1 07:02:54 nehelper(MobileWiFi)[1009] <Error>: WiFiDeviceClientCopyCurrentNetwork: server port [15431]
+Jun  1 07:02:54 nehelper(CoreLocation)[1009] <Notice>: {"msg":"CLLocationManager", "event":"activity", "_cmd":"_checkAndExerciseAuthorizationForBundleID:error:", "self":"0x1f105f7f8", "bundleID":"com.ss.iphone.ugc.Aweme"}
+Jun  1 07:02:54 Aweme(libsystem_networkextension.dylib)[6307] <Error>: nehelper sent invalid result code [1] for Wi-Fi information request
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:54 Aweme(UserNotifications)[6307] <Notice>: [com.ss.iphone.ugc.Aweme] Set badge number [ hasCompletionHandler: 0 hasError: 0 ]
+Jun  1 07:02:54 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=6307.3, authValue=1, authReason=0, authVersion=2, error=(null),
+Jun  1 07:02:54 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=6307.4, authValue=1, authReason=0, authVersion=1, error=(null),
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: Gum code signing policy before init: optional
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: init: user_name=AwemeCore actual_name=AwemeCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/BDLRepairer.framework/BDLRepairer
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/VolcEngineRTC.framework/VolcEngineRTC
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/byteaudio.framework/byteaudio
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(UIKitCore)[6307] <Error>: Unable to simultaneously satisfy constraints.
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftARKit.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftAVFoundation.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftAccelerate.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCore.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCoreAudio.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCoreData.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCoreFoundation.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCoreGraphics.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCoreImage.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCoreLocation.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftCoreMedia.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftDarwin.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftDispatch.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftFoundation.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftGLKit.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftIntents.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftMapKit.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftMetal.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftModelIO.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftNetwork.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftObjectiveC.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftPhotos.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftPhotosUI.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftQuartzCore.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftSceneKit.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftSpriteKit.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftUIKit.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftVision.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftos.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: dependency not found: @rpath/libswiftsimd.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: init: module AwemeCore registered base=115710000 size=3e4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] systemhook.dylib base=1045d8000 size=c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: systemhook.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Aweme base=10435c000 size=8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Aweme
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] BDLRepairer base=1047b8000 size=8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: BDLRepairer
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] VolcEngineRTC base=10531c000 size=38000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: VolcEngineRTC
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] byteaudio base=104a28000 size=218000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: byteaudio
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcompression.dylib base=1d9c50000 size=ca000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcompression.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] liblzma.5.dylib base=1d9f18000 size=19000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: liblzma.5.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libSystem.B.dylib base=1bda96000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libSystem.B.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcache.dylib base=1dab91000 size=6000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcache.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcommonCrypto.dylib base=1dab97000 size=d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcommonCrypto.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcompiler_rt.dylib base=1daba4000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcompiler_rt.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcopyfile.dylib base=1daba9000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcopyfile.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcorecrypto.dylib base=1a5060000 size=78000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcorecrypto.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libdispatch.dylib base=1810b2000 size=83000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libdispatch.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libdyld.dylib base=181135000 size=b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libdyld.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libmacho.dylib base=1daca0000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libmacho.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libremovefile.dylib base=1daca5000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libremovefile.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_asl.dylib base=1a51e3000 size=17000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_asl.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_blocks.dylib base=1daca7000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_blocks.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_c.dylib base=18b866000 size=7b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_c.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_collections.dylib base=1daca9000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_collections.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_configuration.dylib base=1dacae000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_configuration.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_containermanager.dylib base=1dacb3000 size=1f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_containermanager.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_coreservices.dylib base=1dacd2000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_coreservices.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_darwin.dylib base=1dacd4000 size=a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_darwin.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_dnssd.dylib base=1dacde000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_dnssd.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_featureflags.dylib base=1dace7000 size=3000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_featureflags.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_info.dylib base=18b841000 size=25000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_info.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_m.dylib base=1dacea000 size=37000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_m.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_malloc.dylib base=191eb7000 size=20000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_malloc.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_networkextension.dylib base=1942a3000 size=17000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_networkextension.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_notify.dylib base=1a4f68000 size=a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_notify.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_product_info_filter.dylib base=1dad2d000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_product_info_filter.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_sandbox.dylib base=1dad3e000 size=4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_sandbox.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_kernel.dylib base=1ba914000 size=32000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_kernel.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_platform.dylib base=1dad21000 size=c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_platform.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_pthread.dylib base=1dad2e000 size=10000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_pthread.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_symptoms.dylib base=1add57000 size=8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_symptoms.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsystem_trace.dylib base=19a41f000 size=18000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsystem_trace.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libunwind.dylib base=1dad42000 size=a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libunwind.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libxpc.dylib base=1dad4c000 size=33000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libxpc.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libobjc.A.dylib base=1984a4000 size=36000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libobjc.A.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libc++abi.dylib base=19859b000 size=19000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libc++abi.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libc++.1.dylib base=198542000 size=59000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libc++.1.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Foundation base=182afd000 size=2df000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Foundation
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreFoundation base=1813b8000 size=43b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreFoundation
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreAutoLayout base=19876c000 size=46000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreAutoLayout
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CFNetwork base=181b8a000 size=496000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CFNetwork
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libarchive.2.dylib base=1bdf6c000 size=82000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libarchive.2.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libicucore.A.dylib base=181140000 size=278000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libicucore.A.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libxml2.2.dylib base=1da7b4000 size=e6000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libxml2.2.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] liblangid.dylib base=1d9f0d000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: liblangid.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] IOKit base=18d5ff000 size=ae000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: IOKit
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SoftLinking base=1d1f7c000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SoftLinking
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Security base=1899b8000 size=15d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Security
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SystemConfiguration base=181a03000 size=76000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SystemConfiguration
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libapple_nghttp2.dylib base=1d9aee000 size=18000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libapple_nghttp2.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libnetwork.dylib base=182020000 size=a66000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libnetwork.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libsqlite3.dylib base=1a3dea000 size=18c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libsqlite3.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libz.1.dylib base=1da8c5000 size=12000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libz.1.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libenergytrace.dylib base=1d9d9e000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libenergytrace.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libbsm.0.dylib base=1d9c20000 size=11000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libbsm.0.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libCoreEntitlements.dylib base=1e50e0000 size=a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libCoreEntitlements.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcoretls.dylib base=1d9d1a000 size=16000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcoretls.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcoretls_cfhelpers.dylib base=1d9d30000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcoretls_cfhelpers.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libMobileGestalt.dylib base=191943000 size=5f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libMobileGestalt.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] IOMobileFramebuffer base=1a9ef3000 size=b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: IOMobileFramebuffer
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libpcap.A.dylib base=1da5ca000 size=36000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libpcap.A.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libdns_services.dylib base=1d9d78000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libdns_services.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] IOSurface base=1ad70d000 size=13000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: IOSurface
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libbz2.1.0.dylib base=1d9c31000 size=d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libbz2.1.0.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libiconv.2.dylib base=1d9deb000 size=f2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libiconv.2.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcharset.1.dylib base=1d9c3e000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcharset.1.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AdServices base=1dc110000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AdServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] StoreKit base=1a8f61000 size=ad000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: StoreKit
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppStoreFoundation base=1c3e75000 size=7000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppStoreFoundation
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppStoreOverlays base=1c3e7c000 size=c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppStoreOverlays
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Accounts base=182a86000 size=77000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Accounts
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreGraphics base=183171000 size=5ac000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreGraphics
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppleMediaServices base=185311000 size=4bc000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppleMediaServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ManagedConfiguration base=1896a7000 size=12f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ManagedConfiguration
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Preferences base=185e9b000 size=14e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Preferences
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] StoreServices base=1931ee000 size=2bb000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: StoreServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] TCC base=1d24b0000 size=11000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: TCC
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] UIKit base=1c1ab2000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: UIKit
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] WebKitLegacy base=1a8c63000 size=18a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: WebKitLegacy
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreServices base=1817f3000 size=1c8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CryptoKit base=1b6a92000 size=4b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CryptoKit
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppStoreDaemon base=19a757000 size=a2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppStoreDaemon
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] UIFoundation base=18b719000 size=128000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: UIFoundation
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftCore.dylib base=185adb000 size=39b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftCore.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftCoreData.dylib base=1da9e6000 size=b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftCoreData.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftCoreFoundation.dylib base=1da9f1000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftCoreFoundation.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftCoreGraphics.dylib base=18965c000 size=a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftCoreGraphics.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftCoreImage.dylib base=1da9f2000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftCoreImage.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftDarwin.dylib base=1daa5f000 size=a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftDarwin.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftDataDetection.dylib base=1e5904000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftDataDetection.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftDispatch.dylib base=19921b000 size=16000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftDispatch.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftFileProvider.dylib base=1e5948000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftFileProvider.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftFoundation.dylib base=1857cd000 size=30e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftFoundation.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftMetal.dylib base=1daa88000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftMetal.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftObjectiveC.dylib base=1b2080000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftObjectiveC.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftQuartzCore.dylib base=1dab11000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftQuartzCore.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftUIKit.dylib base=1975b8000 size=5f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftUIKit.dylib
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifier
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchCategory
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProviderClass
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatch
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOSourceVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties CFBundleIdentifierKernel
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IONameMatched
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOProbeScore
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOMatchedAtBoot
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties KDebugVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegend
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOReportLegendPublic
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMVersionNumber
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties SCMBuildTime
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties IOPowerManagement
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties AGXTraceCodeVersion
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterBundleName
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPURawCounterPluginClassName
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswift_Concurrency.dylib base=1e5992000 size=3d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswift_Concurrency.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libswiftos.dylib base=1dab61000 size=19000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libswiftos.dylib
+Jun  1 07:02:54 kernel(Sandbox)[0] <Error>: Sandbox: Aweme(6307) deny(1) iokit-get-properties GPUConfigurationVariable
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MobileInstallation base=1a3af4000 size=45000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MobileInstallation
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreServicesStore base=1a5511000 size=38000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreServicesStore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MobileSystemServices base=1ccce5000 size=7000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MobileSystemServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DocumentManager base=1c92e1000 size=44000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DocumentManager
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] FileProvider base=19908b000 size=16d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: FileProvider
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] UIKitCore base=18371d000 size=1788000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: UIKitCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ShareSheet base=193658000 size=d7000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ShareSheet
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] IconServices base=1a6481000 size=4e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: IconServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ImageIO base=182ddc000 size=37d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ImageIO
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] QuartzCore base=184ec8000 size=2bc000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: QuartzCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Network base=1987b2000 size=195000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Network
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libprequelite.dylib base=1da614000 size=14000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libprequelite.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DocumentManagerCore base=1c9325000 size=27000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DocumentManagerCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] RunningBoardServices base=18b8e1000 size=53000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: RunningBoardServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] UniformTypeIdentifiers base=197b1d000 size=13000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: UniformTypeIdentifiers
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppSupport base=189666000 size=41000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppSupport
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreImage base=18a7b3000 size=31c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreImage
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreUtils base=18e4d9000 size=185000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreUtils
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] FrontBoardServices base=191e18000 size=9f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: FrontBoardServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreText base=186251000 size=1b3000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreText
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] PushKit base=1b65e4000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: PushKit
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] XCTTargetBootstrap base=1d5c86000 size=4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: XCTTargetBootstrap
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libapp_launch_measurement.dylib base=1d9aeb000 size=3000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libapp_launch_measurement.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] OpenGLES base=1c0ff8000 size=a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: OpenGLES
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AggregateDictionary base=1c3674000 size=6000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AggregateDictionary
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] PowerLog base=19b6d2000 size=27000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: PowerLog
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] HangTracer base=1bd6c1000 size=13000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: HangTracer
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MobileKeyBag base=198947000 size=3b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MobileKeyBag
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SignpostMetrics base=1d12c7000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SignpostMetrics
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] PointerUIServices base=1cde10000 size=e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: PointerUIServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] StudyLog base=1b6a89000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: StudyLog
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ContextKitExtraction base=1b1f4d000 size=11000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ContextKitExtraction
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreMaterial base=1a3d34000 size=20000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreMaterial
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Pasteboard base=1cda39000 size=31000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Pasteboard
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DataDetection base=1dcf92000 size=3000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DataDetection
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CMPhoto base=1deb45000 size=a8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CMPhoto
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MediaToolbox base=18abc6000 size=715000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MediaToolbox
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DataDetectorsCore base=199231000 size=3a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DataDetectorsCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreSVG base=1c8b40000 size=2d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreSVG
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Accelerate base=1be9be000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Accelerate
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreAnalytics base=1a5549000 size=2e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreAnalytics
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] UserNotifications base=191dd4000 size=44000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: UserNotifications
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AssertionServices base=199f29000 size=11000
+Jun  1 07:02:54 CommCenter[1000] <Error>: Client [<private>] entitlement failed: 'public-signal-strength', required for request "<private>"
+Jun  1 07:02:54 CommCenter[1000] <Error>: Client [<private>] entitlement failed: 'public-signal-strength', required for request "<private>"
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AssertionServices
+Jun  1 07:02:54 tccd[949] <Notice>: AUTHREQ_RESULT: msgID=1577.77, authValue=2, authReason=5, authVersion=1, error=(null),
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] BackBoardServices base=185184000 size=7a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: BackBoardServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] BaseBoard base=18643b000 size=b3000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: BaseBoard
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreUI base=18ecad000 size=db000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreUI
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] GraphicsServices base=19b4e1000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: GraphicsServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MobileAsset base=19427b000 size=28000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MobileAsset
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] PhysicsKit base=1cdd02000 size=4d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: PhysicsKit
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] PrototypeTools base=1aa5c9000 size=24000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: PrototypeTools
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] TextInput base=1851fe000 size=ab000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: TextInput
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] UIKitServices base=185e76000 size=25000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: UIKitServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libAccessibility.dylib base=184ea5000 size=23000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libAccessibility.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AXCoreUtilities base=195c8e000 size=16000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AXCoreUtilities
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MediaAccessibility base=1bb917000 size=c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MediaAccessibility
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libperfcheck.dylib base=1da600000 size=e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libperfcheck.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] perfdata base=1d854b000 size=12000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: perfdata
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libIOReport.dylib base=1d9713000 size=8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libIOReport.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ColorSync base=18aacf000 size=bb000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ColorSync
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] IOSurfaceAccelerator base=1cb993000 size=3000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: IOSurfaceAccelerator
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Metal base=199fcd000 size=121000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Metal
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libate.dylib base=1d9b06000 size=91000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libate.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libexpat.1.dylib base=1d9d9f000 size=19000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libexpat.1.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppleJPEG base=1c5a11000 size=45000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppleJPEG
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libFontParser.dylib base=1c9e37000 size=11a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libFontParser.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libhvf.dylib base=1c9ff9000 size=8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libhvf.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] vImage base=1a71da000 size=2c0000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: vImage
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] vecLib base=1bee5f000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: vecLib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libvMisc.dylib base=1bee0a000 size=55000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libvMisc.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libvDSP.dylib base=198cd9000 size=ce000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libvDSP.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libBLAS.dylib base=1be9bf000 size=ad000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libBLAS.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libLAPACK.dylib base=1bea6c000 size=311000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libLAPACK.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libLinearAlgebra.dylib base=1bed7d000 size=15000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libLinearAlgebra.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libSparseBLAS.dylib base=1bedf8000 size=12000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libSparseBLAS.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libQuadrature.dylib base=1bed92000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libQuadrature.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libBNNS.dylib base=1be013000 size=506000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libBNNS.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libSparse.dylib base=1bed97000 size=61000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libSparse.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] IOAccelerator base=1b9f18000 size=6000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: IOAccelerator
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libCoreFSCache.dylib base=1c1004000 size=7000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libCoreFSCache.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libGPUCompilerUtils.dylib base=1e00ba000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libGPUCompilerUtils.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppleSauce base=1c5b2c000 size=23000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppleSauce
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libGSFontCache.dylib base=1c9f5a000 size=3d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libGSFontCache.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libGSFont.dylib base=1c9f51000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libGSFont.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] OTSVG base=1cd387000 size=41000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: OTSVG
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] FontServices base=1bb59e000 size=e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: FontServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SpringBoardServices base=18d6ba000 size=71000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SpringBoardServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] IdleTimerServices base=1cb9c0000 size=8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: IdleTimerServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] BoardServices base=1a354a000 size=51000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: BoardServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ProtocolBuffer base=199c38000 size=1a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ProtocolBuffer
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] TextureIO base=1d2e74000 size=a4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: TextureIO
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] InternationalSupport base=197300000 size=c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: InternationalSupport
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MobileCoreServices base=1c041d000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MobileCoreServices
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ASEProcessing base=1c2dc7000 size=c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ASEProcessing
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libtailspin.dylib base=1bdfee000 size=25000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libtailspin.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libEDR base=1d851d000 size=17000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libEDR
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreVideo base=18ab8a000 size=3c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreVideo
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MetalPerformanceShaders base=1bfca8000 size=1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MetalPerformanceShaders
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CrashReporterSupport base=19931c000 size=e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CrashReporterSupport
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] OSAnalytics base=1a37ca000 size=49000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: OSAnalytics
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Symbolication base=19926b000 size=b1000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Symbolication
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreSymbolication base=1ace19000 size=ad000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreSymbolication
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] OSAServicesClient base=1abe6c000 size=4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: OSAServicesClient
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MallocStackLogging base=1b5829000 size=b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MallocStackLogging
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] FeatureFlagsSupport base=1c9c3a000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: FeatureFlagsSupport
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SignpostCollection base=1d12bc000 size=b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SignpostCollection
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ktrace base=1a86e8000 size=57000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ktrace
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SampleAnalysis base=1bd8b2000 size=cb000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SampleAnalysis
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] kperfdata base=1d8514000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: kperfdata
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libdscsym.dylib base=1bd6bb000 size=6000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libdscsym.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SignpostSupport base=1d12c9000 size=45000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SignpostSupport
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] LoggingSupport base=1984da000 size=68000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: LoggingSupport
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] APFS base=1c2d6e000 size=59000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: APFS
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libutil.dylib base=1da7b0000 size=4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libutil.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] kperf base=1d850e000 size=6000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: kperf
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreBrightness base=1c7476000 size=113000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreBrightness
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AFKUser base=1c2732000 size=4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AFKUser
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreAccessories base=1abaa6000 size=37000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreAccessories
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CPMS base=1c661a000 size=11000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CPMS
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] HID base=1cacd6000 size=f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: HID
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CARPFoundation base=1de999000 size=38000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CARPFoundation
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libGFXShared.dylib base=1c1010000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libGFXShared.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libGLImage.dylib base=1add1e000 size=39000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libGLImage.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libCVMSPluginSupport.dylib base=1c1002000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libCVMSPluginSupport.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libCoreVMClient.dylib base=1c100b000 size=5000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libCoreVMClient.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MPSCore base=19971b000 size=6c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MPSCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MPSImage base=1bfb15000 size=8b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MPSImage
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MPSNeuralNetwork base=199522000 size=1f9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MPSNeuralNetwork
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MPSMatrix base=1bfba0000 size=29000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MPSMatrix
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MPSRayIntersector base=1bfc57000 size=51000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MPSRayIntersector
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MPSNDArray base=1bfbc9000 size=8e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MPSNDArray
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MPSFunctions base=1dd0b7000 size=13000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MPSFunctions
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreMedia base=18b2db000 size=109000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreMedia
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] VideoToolbox base=195863000 size=2b8000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: VideoToolbox
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] FaceCore base=1c9820000 size=413000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: FaceCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] GraphVisualizer base=1cac9c000 size=d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: GraphVisualizer
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CMCaptureCore base=1c65f2000 size=b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CMCaptureCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] WatchdogClient base=1d4717000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: WatchdogClient
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreAudio base=1addae000 size=648000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreAudio
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libAudioStatistics.dylib base=1d92b7000 size=11000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libAudioStatistics.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AudioToolboxCore base=192f1f000 size=27c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AudioToolboxCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] caulk base=1d5d2c000 size=27000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: caulk
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ExtensionFoundation base=1c95e4000 size=48000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ExtensionFoundation
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreMIDI base=1bf161000 size=6c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreMIDI
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libAudioToolboxUtility.dylib base=198da7000 size=31000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libAudioToolboxUtility.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] PlugInKit base=1bd97d000 size=33000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: PlugInKit
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MediaExperience base=19a0ee000 size=17c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MediaExperience
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libCTGreenTeaLogger.dylib base=1d94b9000 size=2000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libCTGreenTeaLogger.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CorePhoneNumbers base=1c7d17000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CorePhoneNumbers
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] JavaScriptCore base=18b934000 size=1118000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: JavaScriptCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] WebCore base=18f684000 size=22bf000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: WebCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libANGLE-shared.dylib base=1d479e000 size=40b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libANGLE-shared.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libwebrtc.dylib base=1d4ba9000 size=745000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libwebrtc.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] NetworkExtension base=1942ba000 size=261000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: NetworkExtension
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] URLFormatting base=1d31a5000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: URLFormatting
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AudioToolbox base=18b3e4000 size=27a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AudioToolbox
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] PersistentConnection base=1aa5ed000 size=2f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: PersistentConnection
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CaptiveNetwork base=1c6989000 size=c000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CaptiveNetwork
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libnetworkextension.dylib base=1da205000 size=24000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libnetworkextension.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] EAP8021X base=1c9424000 size=31000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: EAP8021X
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreTelephony base=181a79000 size=111000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreTelephony
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CommonUtilities base=1919a2000 size=1d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CommonUtilities
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libcupolicy.dylib base=1d9d71000 size=7000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libcupolicy.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libTelephonyUtilDynamic.dylib base=1a3b39000 size=86000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libTelephonyUtilDynamic.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MSUDataAccessor base=194275000 size=6000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MSUDataAccessor
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libpartition2_dynamic.dylib base=1da5ba000 size=10000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libpartition2_dynamic.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MobileWiFi base=1ad720000 size=69000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MobileWiFi
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Bom base=1b6571000 size=3a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Bom
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] AppleFSCompression base=1c59e4000 size=10000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: AppleFSCompression
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DMCUtilities base=1dfb7b000 size=34000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DMCUtilities
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DataMigration base=18d6ad000 size=d000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DataMigration
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] MDMClientLibrary base=1e07bd000 size=1a000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: MDMClientLibrary
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] liblockdown.dylib base=1d9f0f000 size=9000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: liblockdown.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] libmis.dylib base=1da1e7000 size=1e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: libmis.dylib
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] UserManagement base=1a50d8000 size=2b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: UserManagement
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] Catalyst base=1c6ae6000 size=66000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: Catalyst
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] CoreData base=18845b000 size=36f000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: CoreData
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] ContextKitCore base=1ded8a000 size=4000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: ContextKitCore
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DragUI base=1c93ed000 size=3000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DragUI
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] GenerationalStorage base=1cac7b000 size=21000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: GenerationalStorage
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] SymptomDiagnosticReporter base=1d23f6000 size=b000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: SymptomDiagnosticReporter
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] DesktopServicesPriv base=1c8e8d000 size=5e000
+Jun  1 07:02:54 Aweme(libGumTrace.dylib)[6307] <Notice>: [ERROR] gumtrace: module_enumerate [iOS] excluding: DesktopServicesPriv
+Jun  1 07:02:55 kernel(IO80211Family)[0] <Notice>: LQM-WIFI: slow-wifi RxLim[1] highFCSErrors:0 highDups:0 highReplays:0 highDecryptErrors:0 highMCDecryptErrors:0 lowRxFrameCount:1
+Jun  1 07:02:55 kernel(AppleBCMWLANCore)[0] <Notice>: LQM-WiFi: (5G) txRTSFrm=229 txRTSFail=0 rxCTSUcast=215 rxRTSUcast=29 txCTSFrm=29 txAMPDU=215 rxBACK=215 txPhyError=0 txAllFrm=689 txMPDU=328 txUcast=226 rxACKUcast=11
+Jun  1 07:02:58 duetexpertd(AppPredictionInternal)[1102] <Error>: No poi category received from biome stream, so returning default poi category
+Jun  1 07:02:58 duetexpertd(AppPredictionInternal)[1102] <Error>: No poi category received from biome stream, so returning default poi category
+Jun  1 07:03:00 kernel(IO80211Family)[0] <Notice>: LQM-WIFI: slow-wifi RxLim[1] highFCSErrors:0 highDups:0 highReplays:0 highDecryptErrors:0 highMCDecryptErrors:0 lowRxFrameCount:1
+Jun  1 07:03:00 kernel(AppleBCMWLANCore)[0] <Notice>: LQM-WiFi: (5G) txRTSFrm=48 txRTSFail=0 rxCTSUcast=48 rxRTSUcast=6 txCTSFrm=6 txAMPDU=49 rxBACK=48 txPhyError=0 txAllFrm=151 txMPDU=49 txUcast=54 rxACKUcast=6
+Jun  1 07:03:05 kernel(IO80211Family)[0] <Notice>: LQM-WIFI: slow-wifi RxLim[1] highFCSErrors:0 highDups:0 highReplays:0 highDecryptErrors:0 highMCDecryptErrors:0 lowRxFrameCount:1
+Jun  1 07:03:05 kernel(AppleBCMWLANCore)[0] <Notice>: LQM-WiFi: (5G) txRTSFrm=1 txRTSFail=0 rxCTSUcast=1 rxRTSUcast=0 txCTSFrm=0 txAMPDU=1 rxBACK=1 txPhyError=0 txAllFrm=5 txMPDU=1 txUcast=3 rxACKUcast=2
+Jun  1 07:03:21 destinationd[1109] <Error>: Error while reading suggestions from Wallet: Error Domain=GEOErrorDomain Code=-13 "No current location" UserInfo={NSDebugDescription=No current location}
+Jun  1 07:03:25 kernel(IO80211Family)[0] <Notice>: LQM-WIFI: slow-wifi RxLim[1] highFCSErrors:0 highDups:0 highReplays:0 highDecryptErrors:0 highMCDecryptErrors:0 lowRxFrameCount:1
+Jun  1 07:03:25 kernel(AppleBCMWLANCore)[0] <Notice>: LQM-WiFi: (5G) txRTSFrm=2 txRTSFail=0 rxCTSUcast=2 rxRTSUcast=0 txCTSFrm=0 txAMPDU=2 rxBACK=2 txPhyError=0 txAllFrm=8 txMPDU=2 txUcast=4 rxACKUcast=2

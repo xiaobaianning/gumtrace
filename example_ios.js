@@ -11,9 +11,10 @@ function loadGumTrace() {
 
     let soHandle = dlopen(Memory.allocUtf8String('/var/jb/var/root/' + traceSoName), 2)
     console.log('GumTrace loaded:', soHandle)
+
     if (soHandle.isNull()) {
-        let error = new NativeFunction(Module.findExportByName(null, 'dlerror'), 'pointer', [])
-        console.log('dlopen failed, dlerror:', error().readUtf8String())
+        let dlerror = new NativeFunction(Module.findExportByName(null, 'dlerror'), 'pointer', [])
+        console.log('dlopen failed:', dlerror().readUtf8String())
         return false
     }
 
@@ -57,8 +58,8 @@ function startTrace() {
     try {
         gumtrace_init(moduleNames, outputPath, threadId, options)
         console.log('init done')
-    } catch (e) {
-        console.log('init failed:', e)
+    } catch(e) {
+        console.log('init error:', e)
         return
     }
 
@@ -66,9 +67,8 @@ function startTrace() {
     try {
         gumtrace_run()
         console.log('run done')
-    } catch (e) {
-        console.log('run failed:', e)
-        return
+    } catch(e) {
+        console.log('run error:', e)
     }
 }
 
@@ -79,8 +79,8 @@ function stopTrace() {
             gumtrace_unrun()
             console.log('unrun done')
         }
-    } catch (e) {
-        console.log('unrun failed:', e)
+    } catch(e) {
+        console.log('unrun error:', e)
     }
 }
 
@@ -89,11 +89,11 @@ function stopTrace() {
 let isTrace = false
 function hook() {
 
+
     // 示例：hook 目标函数，在其执行期间进行追踪
     let targetModule = Process.findModuleByName(targetSo)
-    console.log('targetModule:', targetModule.name, 'base:', targetModule.base, 'size:', targetModule.size)
-
-    Interceptor.attach(targetModule.base.add(0xD79AC6C), {
+    console.log('target module:', targetModule.name, 'base:', targetModule.base, 'size:', targetModule.size)
+    Interceptor.attach(targetModule.base.add(0xD79A748), {
         onEnter() {
             if (isTrace === false) {
                 isTrace = true
@@ -112,7 +112,7 @@ function hook() {
         }
     })
 
-    console.log('hook installed at', targetModule.base.add(0xD79AC6C))
+    console.log('hook installed at offset 0xD79A748')
 }
 
 setImmediate(hook)

@@ -234,14 +234,14 @@ void* thread_function(void* arg) {
 
 extern "C" __attribute__((visibility("default")))
 void run() {
-    LOGE("run() called, creating flush thread...");
+    NSLog(@"[GumTrace] >>> run() ENTER");
     pthread_t thread1;
     pthread_create(&thread1, NULL, thread_function, nullptr);
 
     GumTrace *instance = GumTrace::get_instance();
-    LOGE("run() calling follow(), stalker=%p", instance->_stalker);
+    NSLog(@"[GumTrace] >>> run() stalker=%p", instance->_stalker);
     instance->follow();
-    LOGE("run() follow() returned");
+    NSLog(@"[GumTrace] >>> run() follow() done");
 }
 
 extern "C" __attribute__((visibility("default")))
