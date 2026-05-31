@@ -80,6 +80,8 @@ public:
 
     GUM_OPTIONS options;
     std::vector<RangeInfo> safa_ranges;
+    std::vector<RangeInfo> target_ranges;
+    std::string target_module_path;
 
     std::unordered_map<size_t, std::string> svc_func_maps;
     std::unordered_map<size_t, std::string> func_fds;

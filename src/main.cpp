@@ -49,6 +49,21 @@ gboolean on_range_found(const GumRangeDetails *details, gpointer user_data) {
     return TRUE;
 }
 
+gboolean on_target_range_found(const GumRangeDetails *details, gpointer user_data) {
+    auto instance = GumTrace::get_instance();
+    if (!details->file) return TRUE;
+
+    if (instance->target_module_path == details->file->path) {
+        RangeInfo info;
+        info.base = (uintptr_t) details->range->base_address;
+        info.size = (uintptr_t) details->range->size;
+        info.end = info.base + info.size;
+        info.file_path = details->file->path;
+        instance->target_ranges.push_back(info);
+    }
+    return TRUE;
+}
+
 gboolean module_enumerate (GumModule * module, gpointer user_data) {
     auto instance = GumTrace::get_instance();
     const char *module_name = gum_module_get_name(module);
@@ -130,7 +145,9 @@ void init(const char *module_names, char *trace_file_path, int thread_id, GUM_OP
             continue;
         }
         const char *actual_name = gum_module_get_name(gum_module);
-        LOGE("init: user_name=%s actual_name=%s", module_name.c_str(), actual_name);
+        const char *actual_path = gum_module_get_path(gum_module);
+        LOGE("init: user_name=%s actual_name=%s path=%s", module_name.c_str(), actual_name, actual_path);
+        instance->target_module_path = actual_path;
         auto &module_map = instance->modules[actual_name];
         gum_module_enumerate_symbols(gum_module, module_symbols_cb, nullptr);
         gum_module_enumerate_dependencies(gum_module, module_dependency_cb, nullptr);
@@ -141,6 +158,15 @@ void init(const char *module_names, char *trace_file_path, int thread_id, GUM_OP
     }
 
     gum_process_enumerate_modules(module_enumerate, nullptr);
+
+    // Enumerate ALL memory ranges belonging to the target module
+    gum_process_enumerate_ranges(GUM_PAGE_RX, on_target_range_found, nullptr);
+    std::sort(instance->target_ranges.begin(), instance->target_ranges.end(),
+        [](const RangeInfo &a, const RangeInfo &b) { return a.base < b.base; });
+    LOGE("init: found %d target ranges", (int)instance->target_ranges.size());
+    for (const auto &r : instance->target_ranges) {
+        LOGE("init: target range base=%lx end=%lx size=%lx", r.base, r.end, r.size);
+    }
 
     size_t path_len = strlen(trace_file_path);
     if (path_len >= sizeof(instance->trace_file_path)) {

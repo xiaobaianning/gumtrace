@@ -341,9 +341,6 @@ void GumTrace::callout_callback(GumCpuContext *cpu_context, gpointer user_data) 
 void GumTrace::transform_callback(GumStalkerIterator *iterator, GumStalkerOutput *output, gpointer user_data) {
     const auto self = get_instance();
     static int transform_count = 0;
-    if (transform_count == 0) {
-        LOGE("transform_callback CALLED %d", transform_count);
-    }
 
     cs_insn *p_insn;
     auto *it = iterator;
@@ -376,6 +373,31 @@ const std::string *GumTrace::in_range_module(size_t address) {
         return last_module_cache.name;
     }
 
+    // Check against all target module ranges (handles multiple segments)
+    if (!target_ranges.empty()) {
+        int left = 0;
+        int right = (int)target_ranges.size() - 1;
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            const auto &r = target_ranges[mid];
+            if (address >= r.base && address < r.end) {
+                // Found in target module range, return the module name
+                for (const auto &pair: modules) {
+                    last_module_cache.name = &pair.first;
+                    last_module_cache.base = r.base;
+                    last_module_cache.end = r.end;
+                    return &pair.first;
+                }
+            }
+            if (address < r.base) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+    }
+
+    // Fallback: check against modules map (single range per module)
     for (const auto &pair: modules) {
         const auto &module_map = pair.second;
         size_t base = module_map.at("base");
