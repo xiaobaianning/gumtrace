@@ -341,18 +341,23 @@ void GumTrace::callout_callback(GumCpuContext *cpu_context, gpointer user_data) 
 void GumTrace::transform_callback(GumStalkerIterator *iterator, GumStalkerOutput *output, gpointer user_data) {
     const auto self = get_instance();
     static int transform_count = 0;
+    static int miss_count = 0;
 
     cs_insn *p_insn;
     auto *it = iterator;
     while (gum_stalker_iterator_next(it, (const cs_insn **) &p_insn)) {
         const std::string *module_name_ptr = self->in_range_module(p_insn->address);
         if (module_name_ptr == nullptr) {
+            if (miss_count < 3) {
+                LOGE("transform MISS: addr=%lx", p_insn->address);
+                miss_count++;
+            }
             gum_stalker_iterator_keep(it);
             continue;
         }
 
         if (transform_count < 5) {
-            LOGE("transform: addr=%lx module=%s", p_insn->address, module_name_ptr->c_str());
+            LOGE("transform HIT: addr=%lx module=%s", p_insn->address, module_name_ptr->c_str());
             transform_count++;
         }
 
