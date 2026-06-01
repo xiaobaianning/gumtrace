@@ -369,46 +369,9 @@ void GumTrace::transform_callback(GumStalkerIterator *iterator, GumStalkerOutput
 }
 
 const std::string *GumTrace::in_range_module(size_t address) {
-    if (last_module_cache.name != nullptr && address >= last_module_cache.base && address < last_module_cache.end) {
-        return last_module_cache.name;
-    }
-
-    // Check against all target module ranges (handles multiple segments)
-    if (!target_ranges.empty()) {
-        int left = 0;
-        int right = (int)target_ranges.size() - 1;
-        while (left <= right) {
-            int mid = left + (right - left) / 2;
-            const auto &r = target_ranges[mid];
-            if (address >= r.base && address < r.end) {
-                // Found in target module range, return the module name
-                for (const auto &pair: modules) {
-                    last_module_cache.name = &pair.first;
-                    last_module_cache.base = r.base;
-                    last_module_cache.end = r.end;
-                    return &pair.first;
-                }
-            }
-            if (address < r.base) {
-                right = mid - 1;
-            } else {
-                left = mid + 1;
-            }
-        }
-    }
-
-    // Fallback: check against modules map (single range per module)
-    for (const auto &pair: modules) {
-        const auto &module_map = pair.second;
-        size_t base = module_map.at("base");
-        size_t size = module_map.at("size");
-        size_t end = base + size;
-        if (address >= base && address < end) {
-            last_module_cache.name = &pair.first;
-            last_module_cache.base = base;
-            last_module_cache.end = end;
-            return &pair.first;
-        }
+    // DEBUG: always return first module to test if Stalker works
+    if (!modules.empty()) {
+        return &modules.begin()->first;
     }
     return nullptr;
 }
