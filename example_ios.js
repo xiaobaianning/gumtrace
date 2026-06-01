@@ -37,18 +37,25 @@ function startTrace() {
     let moduleNames = Memory.allocUtf8String(targetSo)
     let outputPath = Memory.allocUtf8String(getSandboxPath('trace.log'))
     let options = Memory.alloc(8)
-    options.writeU64(1)
+    options.writeU64(2) // Stable 模式，trust_threshold=2
 
-    gumtrace_init(moduleNames, outputPath, 0, options)
+    // 找主线程 ID
+    let threads = Process.enumerateThreads()
+    let mainTid = Process.id // 主线程 ID == 进程 ID
+    for (let t of threads) {
+        if (t.id === Process.id) { mainTid = t.id; break }
+    }
+    console.log('tracing main thread:', mainTid)
+
+    gumtrace_init(moduleNames, outputPath, mainTid, options)
     gumtrace_run()
-    console.log('trace started on thread', Process.getCurrentThreadId())
 
     // 3 秒后自动停止
     stopTimer = setTimeout(function() {
         if (isTracing) {
             isTracing = false
             gumtrace_unrun()
-            console.log('trace stopped (timeout)')
+            console.log('trace stopped')
         }
     }, 3000)
 }
@@ -59,15 +66,7 @@ setImmediate(function() {
     let targetModule = Process.findModuleByName(targetSo)
     console.log('target:', targetModule.name, 'base:', targetModule.base)
 
-    // hook 函数，onEnter 启动 trace，不在 onLeave 停止
-    Interceptor.attach(targetModule.base.add(0xD79A748), {
-        onEnter(args) {
-            if (!isTracing) {
-                startTrace()
-            }
-        }
-        // 不在 onLeave 停止，让 Stalker 持续跟踪 3 秒
-    })
-
-    console.log('hook installed, waiting...')
+    // 直接启动 trace，跟踪主线程
+    startTrace()
+    console.log('tracing for 3 seconds...')
 })
