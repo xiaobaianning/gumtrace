@@ -340,21 +340,26 @@ void GumTrace::callout_callback(GumCpuContext *cpu_context, gpointer user_data) 
 
 void GumTrace::transform_callback(GumStalkerIterator *iterator, GumStalkerOutput *output, gpointer user_data) {
     const auto self = get_instance();
-    static int transform_count = 0;
-    static int miss_count = 0;
+    static int total_count = 0;
+    static int hit_count = 0;
 
     cs_insn *p_insn;
     auto *it = iterator;
     while (gum_stalker_iterator_next(it, (const cs_insn **) &p_insn)) {
+        total_count++;
+
         const std::string *module_name_ptr = self->in_range_module(p_insn->address);
         if (module_name_ptr == nullptr) {
+            if (total_count <= 10) {
+                LOGE("transform MISS[%d]: addr=%lx", total_count, p_insn->address);
+            }
             gum_stalker_iterator_keep(it);
             continue;
         }
 
-        if (transform_count < 10) {
-            LOGE("transform HIT: addr=%lx module=%s", p_insn->address, module_name_ptr->c_str());
-            transform_count++;
+        hit_count++;
+        if (hit_count <= 5) {
+            LOGE("transform HIT[%d]: addr=%lx module=%s total=%d", hit_count, p_insn->address, module_name_ptr->c_str(), total_count);
         }
 
         if (gum_stalker_iterator_get_memory_access(it) != GUM_MEMORY_ACCESS_EXCLUSIVE) {
