@@ -4,6 +4,7 @@ let targetSo = 'AwemeCore'
 let gumtrace_init = null
 let gumtrace_run = null
 let gumtrace_unrun = null
+let isTracing = false
 
 function loadGumTrace() {
     let dlopen = new NativeFunction(Module.findExportByName(null, 'dlopen'), 'pointer', ['pointer', 'int'])
@@ -32,39 +33,47 @@ function getSandboxPath(filename) {
     }
 }
 
-// 找到主线程 ID（AwemeCore 的 UI 线程）
-function getMainThreadId() {
-    let threads = Process.enumerateThreads()
-    for (let t of threads) {
-        // 主线程 ID 通常等于进程 ID
-        if (t.id === Process.id) return t.id
-    }
-    // fallback: 第一个线程
-    return threads[0].id
-}
-
-setImmediate(function() {
-    if (!loadGumTrace()) return
-
-    let mainTid = getMainThreadId()
-    console.log('main thread id:', mainTid, 'process id:', Process.id)
+function startTrace() {
+    if (isTracing) return
+    isTracing = true
 
     let moduleNames = Memory.allocUtf8String(targetSo)
     let outputPath = Memory.allocUtf8String(getSandboxPath('trace.log'))
     let options = Memory.alloc(8)
     options.writeU64(1) // DEBUG 模式
 
-    console.log('calling init with main thread...')
-    gumtrace_init(moduleNames, outputPath, mainTid, options)
-    console.log('init done')
-
-    console.log('calling run...')
+    // threadId = 0: 跟踪当前线程（即调用 hook 的线程）
+    gumtrace_init(moduleNames, outputPath, 0, options)
     gumtrace_run()
-    console.log('run done, tracing main thread for 5 seconds...')
+}
 
-    setTimeout(function() {
-        console.log('stopping trace...')
-        gumtrace_unrun()
-        console.log('done, check trace.log')
-    }, 5000)
+function stopTrace() {
+    if (!isTracing) return
+    isTracing = false
+    gumtrace_unrun()
+}
+
+setImmediate(function() {
+    if (!loadGumTrace()) return
+
+    let targetModule = Process.findModuleByName(targetSo)
+    console.log('target:', targetModule.name, 'base:', targetModule.base, 'size:', targetModule.size)
+
+    // hook offset 0xD79A748 处的函数
+    // onEnter 在调用线程上执行，threadId=0 会跟踪该线程
+    Interceptor.attach(targetModule.base.add(0xD79A748), {
+        onEnter(args) {
+            if (!isTracing) {
+                startTrace()
+                this.didStart = true
+            }
+        },
+        onLeave(retval) {
+            if (this.didStart) {
+                stopTrace()
+            }
+        }
+    })
+
+    console.log('hook installed at offset 0xD79A748, waiting for call...')
 })
