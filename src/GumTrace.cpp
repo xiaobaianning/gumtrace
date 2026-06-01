@@ -348,15 +348,11 @@ void GumTrace::transform_callback(GumStalkerIterator *iterator, GumStalkerOutput
     while (gum_stalker_iterator_next(it, (const cs_insn **) &p_insn)) {
         const std::string *module_name_ptr = self->in_range_module(p_insn->address);
         if (module_name_ptr == nullptr) {
-            if (miss_count < 3) {
-                LOGE("transform MISS: addr=%lx", p_insn->address);
-                miss_count++;
-            }
             gum_stalker_iterator_keep(it);
             continue;
         }
 
-        if (transform_count < 5) {
+        if (transform_count < 10) {
             LOGE("transform HIT: addr=%lx module=%s", p_insn->address, module_name_ptr->c_str());
             transform_count++;
         }

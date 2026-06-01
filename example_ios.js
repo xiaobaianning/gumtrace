@@ -52,7 +52,7 @@ function startTrace() {
     // 0 = Stand 模式
     // 1 = DEBUG 模式
     // 2 = Stable 模式
-    options.writeU64(1)  // 临时切到 DEBUG 模式方便调试
+    options.writeU64(1)  // DEBUG 模式
 
     console.log('calling init...')
     try {
@@ -66,7 +66,7 @@ function startTrace() {
     console.log('calling run...')
     try {
         gumtrace_run()
-        console.log('run done')
+        console.log('run done - tracing active for 3 seconds...')
     } catch(e) {
         console.log('run error:', e)
     }
@@ -84,35 +84,15 @@ function stopTrace() {
     }
 }
 
-// Warning: All apis from Frida 17
+// 直接启动 trace，不依赖 hook
+// trace 3 秒后自动停止
+setImmediate(function() {
+    console.log('=== starting trace ===')
+    startTrace()
 
-let isTrace = false
-function hook() {
-
-
-    // 示例：hook 目标函数，在其执行期间进行追踪
-    let targetModule = Process.findModuleByName(targetSo)
-    console.log('target module:', targetModule.name, 'base:', targetModule.base, 'size:', targetModule.size)
-    Interceptor.attach(targetModule.base.add(0xD79A748), {
-        onEnter() {
-            if (isTrace === false) {
-                isTrace = true
-                console.log('=== onEnter: starting trace ===')
-                startTrace()
-                this.tracing = true
-                console.log('=== onEnter: trace started ===')
-            }
-        },
-        onLeave() {
-            if (this.tracing) {
-                console.log('=== onLeave: stopping trace ===')
-                stopTrace()
-                console.log('=== onLeave: trace stopped ===')
-            }
-        }
-    })
-
-    console.log('hook installed at offset 0xD79A748')
-}
-
-setImmediate(hook)
+    setTimeout(function() {
+        console.log('=== stopping trace after 3s ===')
+        stopTrace()
+        console.log('=== done ===')
+    }, 3000)
+})
