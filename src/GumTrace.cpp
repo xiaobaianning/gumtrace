@@ -340,33 +340,30 @@ void GumTrace::callout_callback(GumCpuContext *cpu_context, gpointer user_data) 
 
 void GumTrace::transform_callback(GumStalkerIterator *iterator, GumStalkerOutput *output, gpointer user_data) {
     const auto self = get_instance();
-    static int total_count = 0;
-    static int hit_count = 0;
+    static int block_count = 0;
+    block_count++;
 
     cs_insn *p_insn;
     auto *it = iterator;
-    while (gum_stalker_iterator_next(it, (const cs_insn **) &p_insn)) {
-        total_count++;
+    int insn_in_block = 0;
 
+    while (gum_stalker_iterator_next(it, (const cs_insn **) &p_insn)) {
+        insn_in_block++;
         const std::string *module_name_ptr = self->in_range_module(p_insn->address);
+
+        // Log first instruction of each block
+        if (insn_in_block == 1 && block_count <= 30) {
+            LOGE("blk[%d] first=%lx %s %s", block_count, p_insn->address, p_insn->mnemonic, module_name_ptr ? "HIT" : "miss");
+        }
+
         if (module_name_ptr == nullptr) {
-            if (total_count <= 10) {
-                LOGE("transform MISS[%d]: addr=%lx", total_count, p_insn->address);
-            }
             gum_stalker_iterator_keep(it);
             continue;
         }
 
-        hit_count++;
-        if (hit_count <= 5) {
-            LOGE("transform HIT[%d]: addr=%lx module=%s total=%d", hit_count, p_insn->address, module_name_ptr->c_str(), total_count);
-        }
-
         if (gum_stalker_iterator_get_memory_access(it) != GUM_MEMORY_ACCESS_EXCLUSIVE) {
             const auto& module = self->get_module_by_name(*module_name_ptr);
-
             auto callback_ctx = self->callback_context_instance->pull(p_insn, module_name_ptr->c_str(), module.at("base"));
-
             gum_stalker_iterator_put_callout(it, callout_callback, callback_ctx, nullptr);
         }
 
